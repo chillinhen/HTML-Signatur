@@ -1,36 +1,89 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Email title or subject</title>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Email title or subject</title>
 
-<style type="text/css">
-	
-  /* reset */
-  #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */ 
-  .ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */  
-  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Forces Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */ 
-  p {margin: 0; padding: 0; font-size: 0px; line-height: 0px;} /* squash Exact Target injected paragraphs */
-  table td {border-collapse: collapse;} /* Outlook 07, 10 padding issue fix */
-  table {border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; } /* remove spacing around Outlook 07, 10 tables */
-  
-  /* bring inline */
-  img {display: block; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;}
-  a img {border: none;} 
-  a {text-decoration: none; color: #000001;} /* text link */
-  a.phone {text-decoration: none; color: #000001 !important; pointer-events: auto; cursor: default;} /* phone link, use as wrapper on phone numbers */
-  span {font-size: 13px; line-height: 17px; font-family: monospace; color: #000001;}
+        <style type="text/css">
 
-</style>
-<!--[if gte mso 9]>
-  <style>
-  /* Target Outlook 2007 and 2010 */
-  </style>
-<![endif]-->
-</head>
-<body style="width:100%; margin:0; padding:0; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;">
-<p><font color="#f5af00">Melanie Elsen</font></p><p>C.C.O. Geschäftsführendes Verwaltungsratmitglied</p><p><br></p><table class="table table-bordered"><tbody><tr><td><font color="#21429b">East Management A.G.</font><br></td><td>East Management A.G.<br>Malmedyer Str. 30<br>B - 4700 Eupen</td><td>Tel&nbsp; +32 (0)87 29 37 52<br>FAX + 32 (0)87 63 27 36<br>Mail melanie.elsen@eastmanagment.be</td></tr></tbody></table><p>Besuchen Sie unsere Webseite <a href="http://www.eastmanagement">www.eastmanagement</a>.be</p>
+            /* reset */
+            #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */ 
+            .ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */  
+            .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Forces Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */ 
+            p {margin: 0; padding: 0; font-size: 1rem; line-height: 1.2;} /* squash Exact Target injected paragraphs */
+            table td {border-collapse: collapse;} /* Outlook 07, 10 padding issue fix */
+            table {border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; } /* remove spacing around Outlook 07, 10 tables */
 
-</body>
+            /* bring inline */
+            img {display: block; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;}
+            a img {border: none;} 
+            a {text-decoration: none; color: #000001;} /* text link */
+            a.phone {text-decoration: none; color: #000001 !important; pointer-events: auto; cursor: default;} /* phone link, use as wrapper on phone numbers */
+            span {font-size: 13px; line-height: 17px; font-family: monospace; color: #000001;}
+
+            /*__________________________________*/
+
+            *{
+                font-family: sans-serif;
+            }
+            table{
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            td{
+                color:white;
+            }
+            span{color:inherit;}
+            a, .title{ color:#f5af00 !important;}
+            .title{
+                font-size:2rem;
+                font-weight: bold;
+                text-transform: uppercase;
+               
+            }
+            .company,
+            .claim,
+            .function{
+                color:#21429b; 
+            }
+            .address{
+                background: #21429b;
+                color:white;
+            }
+            
+        </style>
+        <!--[if gte mso 9]>
+          <style>
+          /* Target Outlook 2007 and 2010 */
+          </style>
+        <![endif]-->
+    </head>
+    <body style="width:100%; margin:0; padding:0; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;">
+        <p><span class="title">Melanie Elsen</span><br/>
+            <span class="function">C.C.O. Geschäftsführendes Verwaltungsratmitglied</p><p><br></p>
+
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <td><span class="company">East Management A.G.</span></td>
+                    <td>
+                        <div class="address">
+                            <span>East Management A.G.</span><br>
+                            <span>Malmedyer Str. 30</span><br>
+                            <span>B - 4700 Eupen</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="address">
+                            <span>Tel.</span><span><a href="tel:+3287293752">+32 (0)87 29 37 52</a></span><br>
+                                <span>FAX</span><span><a href="tel:+ 3287632736">+ 32 (0)87 63 27 36</a></span><br>
+                                    <span>Mail</span><span><a href="mailto:melanie.elsen@eastmanagment.be">melanie.elsen@eastmanagment.be</a></span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="claim">Besuchen Sie unsere Webseite <a href="http://www.eastmanagement.be">www.eastmanagement.be</a></p>
+    </body>
 </html>
