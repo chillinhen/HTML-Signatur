@@ -661,7 +661,8 @@
                                             {font-family:"Fira Sans Condensed";}
                                             /* Style Definitions */
                                             p.MsoNormal, li.MsoNormal, div.MsoNormal
-                                            {mso-style-unhide:no;
+                                            {color: #203f94;
+                                             mso-style-unhide:no;
                                              mso-style-qformat:yes;
                                              mso-style-parent:"";
                                              margin:0cm;
@@ -678,6 +679,8 @@
                                              mso-hansi-theme-font:minor-latin;
                                              /*mso-bidi-font-family:"Times New Roman";
                                              mso-bidi-theme-font:minor-bidi;*/}
+                                            p.MsoNormal, p.MsoTitle, p.MsoFunction
+                                            {color: #203f94;}
                                              a:link, span.MsoHyperlink
                                                  {mso-style-priority:99;
                                               color:#f5af00;
@@ -690,6 +693,10 @@
                                               mso-themecolor:followedhyperlink;
                                               text-decoration:none;
                                               text-underline:none;}
+                                                 p.MsoTitle
+                                                 {
+                                                     text-transform: uppercase;
+                                                 }
                                              p
                                              {mso-style-noshow:yes;
                                               mso-style-priority:99;
@@ -723,10 +730,11 @@
                                                          background-color: #203f94;
                                                          color:#ffffff;
                                                      }
-                                                     p.addressRow, p.contactRow{
+                                                     td.location p, td.contactData p{
                                                          border:1px solid red;
                                                          margin:0;
                                                          padding:0;
+                                                         text-transform: uppercase;
                                                      }
                                                      /**** end custom styles ****/
                                              @page WordSection1
@@ -778,7 +786,7 @@
 
                                                         <p class=MsoFunction>C.C.O. - Geschäftsführendes Verwaltungsratmitglied</p>
                                                         <div class="addressSection">
-                                                            <table class="MsoNormalTable">
+                                                            <table class="MsoNormalTable" border="0" cellpadding="0" cellspacing="0">
                                                                 <tr>
                                                                     <td class="logo">
                                                                         <!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
@@ -813,9 +821,9 @@
                                                                         <p class=addressRow>B - 4700 Eupen</p>
                                                                     </td>
                                                                     <td class="contactData">
-                                                                        <p class=contactRow>+32 (0)87 29 37 52</p>
-                                                                        <p class=contactRow>+ 32 (0)87 63 27 36</p>
-                                                                        <p class=contactRow><a href="mailto:melanie.elsen@eastmanagment.be">melanie.elsen@eastmanagment.be</a></p>
+                                                                        <p class=contactRow>Tel. <a href="tel:+3287293752">+32 (0)87 29 37 52</a></p>
+                                                                        <p class=contactRow>Fax <a href="tel:+ 3287632736">+ 32 (0)87 63 27 36</a></p>
+                                                                        <p class=contactRow>Mail <a href="mailto:melanie.elsen@eastmanagment.be">melanie.elsen@eastmanagment.be</a></p>
                                                                     </td>
                                                                 </tr>
                                                             </table>
