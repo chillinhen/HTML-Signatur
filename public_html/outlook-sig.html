@@ -673,12 +673,12 @@
                                              font-family:"Fira Sans Condensed",Arial, sans-serif;
                                              mso-ascii-font-family:Calibri;
                                              mso-ascii-theme-font:minor-latin;
-                                             /*mso-fareast-font-family:"Arial";
-                                             mso-fareast-theme-font:minor-fareast;*/
+                                             mso-fareast-font-family:"Arial";
+                                             mso-fareast-theme-font:minor-fareast;
                                              mso-hansi-font-family:Calibri;
                                              mso-hansi-theme-font:minor-latin;
-                                             /*mso-bidi-font-family:"Arial";
-                                             mso-bidi-theme-font:minor-bidi;*/}
+                                             mso-bidi-font-family:"Arial";
+                                             mso-bidi-theme-font:minor-bidi;}
                                             
                                              a:link, span.MsoHyperlink
                                                  {mso-style-priority:99;
@@ -755,9 +755,23 @@
                                                          font-weight:bold;
                                                      }
                                                      td.polygon-before, td.polygon-after{
-                                                         border-width: 33px 0 0 33px;
-                                                         border-style: solid outset;
-                                                         border-color: red transparent;
+                                                         height:0 !important;
+                                                         width:0 !important;
+                                                         border-top:14px solid red;
+                                                         border-right:32px solid green;
+                                                         border-bottom: 14px solid yellow;
+                                                     }
+                                                     td.polygon-before{
+                                                         border-top:32px solid transparent;
+                                                         border-right:14px solid #203f94;
+                                                         border-bottom: 32px solid #203f94;
+                                                         border-left:14px solid transparent;
+                                                     }
+                                                     td.polygon-after{
+                                                         border-top:32px solid #203f94;
+                                                         border-right:14px solid transparent;
+                                                         border-bottom: 32px solid transparent;
+                                                         border-left:14px solid #203f94;
                                                      }
                                                      /**** end custom styles ****/
                                              @page WordSection1
@@ -808,10 +822,7 @@
                                                         <p class=MsoTitle>Melanie Elsen</p>
 
                                                         <p class=MsoFunction>C.C.O. - Geschäftsführendes Verwaltungsratmitglied</p>
-                                                        <div class="addressSection" style='width: 535px; height: 66px; position:relative; z-index: -1;background-image: url(http://snippets.clients.overflow-hillen.de/wp-content/uploads/sites/17/2018/03/background@3x.png);background-size: 100% auto;'>
-                                                            <!--[if gte vml 1]>
-<v:image style='width: 535px; height: 66px; position: absolute; top: 0; left: 0; border: 1px solid red; z-index: -1;' src="http://snippets.clients.overflow-hillen.de/wp-content/uploads/sites/17/2018/03/background@3x.png" />
-<![endif]-->
+                                                        <div class="addressSection">                                          
                                                             <table class="MsoNormalTable" border="0" cellpadding="0" cellspacing="0">
                                                                 <tr>
                                                                     <td class="logo">
@@ -841,7 +852,7 @@
                                                             </v:shape><![endif]--><![if !vml]><img width=170 height=20
                                                                                                                src="em-neu-Dateien/image002.png" v:shapes="_x0000_i1026" alt="East Managment A.G."><![endif]>
                                                                     </td>
-                                                                    <td class="polygon-before">&nbsp;</td>
+                                                                    <td class="polygon-before"></td>
                                                                     <td class="location">
                                                                         <p class=addressRow>East Management A.G</p>
                                                                         <p class=addressRow>Malmedyer Str. 30</p>
@@ -852,7 +863,7 @@
                                                                         <p class=contactRow>Fax <a href="tel:+ 3287632736">+ 32 (0)87 63 27 36</a></p>
                                                                         <p class=contactRow>Mail <a href="mailto:melanie.elsen@eastmanagment.be">melanie.elsen@eastmanagment.be</a></p>
                                                                     </td>
-                                                                    <td class="polygon-after">&nbsp;</td>
+                                                                    <td class="polygon-after"></td>
                                                                 </tr>
                                                             </table>
                                                         </div>
