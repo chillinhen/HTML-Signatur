@@ -684,7 +684,10 @@
                                             p.MsoTitle{
                                                 font-size: 16pt;
                                                 color:#f5af00;
-                                                margin-bottom:16pt;
+                                                font-weight:bold;
+                                            }
+                                            p.MsoFunction{
+                                               margin-bottom:16pt; 
                                             }
                                              a:link, span.MsoHyperlink
                                                  {mso-style-priority:99;
@@ -736,10 +739,14 @@
                                                          color:#ffffff;
                                                      }
                                                      td.location p, td.contactData p{
-                                                         border:1px solid red;
+                                                         font-size:10.0pt;
                                                          margin:0;
                                                          padding:0;
                                                          text-transform: uppercase;
+                                                         font-weight:bold;
+                                                     }
+                                                     td.polygon-before, td.polygon-after{
+                                                         content:"polygon hier";
                                                      }
                                                      /**** end custom styles ****/
                                              @page WordSection1
@@ -820,6 +827,7 @@
                                                             </v:shape><![endif]--><![if !vml]><img width=170 height=20
                                                                                                                src="em-neu-Dateien/image002.png" v:shapes="_x0000_i1026" alt="East Managment A.G."><![endif]>
                                                                     </td>
+                                                                    <td class="polygon-before"></td>
                                                                     <td class="location">
                                                                         <p class=addressRow>East Management A.G</p>
                                                                         <p class=addressRow>Malmedyer Str. 30</p>
@@ -830,6 +838,7 @@
                                                                         <p class=contactRow>Fax <a href="tel:+ 3287632736">+ 32 (0)87 63 27 36</a></p>
                                                                         <p class=contactRow>Mail <a href="mailto:melanie.elsen@eastmanagment.be">melanie.elsen@eastmanagment.be</a></p>
                                                                     </td>
+                                                                    <td class="polygon-after"></td>
                                                                 </tr>
                                                             </table>
                                                         </div>
