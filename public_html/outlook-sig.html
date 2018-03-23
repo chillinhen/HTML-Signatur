@@ -649,13 +649,7 @@
                                             <!--
                                             /* Font Definitions */
                                             @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400,500,600');
-                                            @font-face
-                                            {font-family:"Cambria Math";
-                                             panose-1:2 4 5 3 5 4 6 3 2 4;
-                                             mso-font-charset:0;
-                                             mso-generic-font-family:roman;
-                                             mso-font-pitch:variable;
-                                             mso-font-signature:3 0 0 0 1 0;}
+              
                                             @font-face
                                             {font-family:Calibri;
                                              panose-1:2 15 5 2 2 2 4 3 2 4;
@@ -671,9 +665,9 @@
                                              mso-style-qformat:yes;
                                              mso-style-parent:"";
                                              margin:0cm;
-                                             margin-bottom:.0001pt;
+                                             margin-bottom:.0;
                                              mso-pagination:widow-orphan;
-                                             font-size:11.0pt;
+                                             font-size:12.0pt;
                                              font-family:"Calibri",Arial, sans-serif;
                                              font-family:"Fira Sans Condensed",Arial, sans-serif;
                                              mso-ascii-font-family:Calibri;
@@ -683,7 +677,7 @@
                                              mso-hansi-font-family:Calibri;
                                              mso-hansi-theme-font:minor-latin;
                                              /*mso-bidi-font-family:"Times New Roman";
-                                             mso-bidi-theme-font:minor-bidi;}*/
+                                             mso-bidi-theme-font:minor-bidi;*/}
                                              a:link, span.MsoHyperlink
                                                  {mso-style-priority:99;
                                               color:#f5af00;
@@ -704,10 +698,11 @@
                                               mso-margin-bottom-alt:auto;
                                               margin-left:0cm;
                                               mso-pagination:widow-orphan;
-                                              font-size:11.0pt;
+                                              font-size:12.0pt;
                                               font-family:"Calibri",sans-serif;
-                                              mso-fareast-font-family:"Times New Roman";
-                                              mso-fareast-theme-font:minor-fareast;}
+                                              font-family:"Fira Sans Condensed",Arial, sans-serif;
+                                              /*mso-fareast-font-family:"Times New Roman";
+                                              mso-fareast-theme-font:minor-fareast;*/}
 .MsoChpDefault
                                                      {mso-style-type:export-only;
                                                      mso-default-props:yes;
@@ -721,7 +716,19 @@
                                                      mso-hansi-font-family:Calibri;
                                                      mso-hansi-theme-font:minor-latin;
                                                      mso-bidi-font-family:"Times New Roman";
+                                                     
 	mso-bidi-theme-font:minor-bidi;}
+                                                     /*** Custom styles **/
+                                                     td.location, td.contactData{
+                                                         background-color: #203f94;
+                                                         color:#ffffff;
+                                                     }
+                                                     p.addressRow, p.contactRow{
+                                                         border:1px solid red;
+                                                         margin:0;
+                                                         padding:0;
+                                                     }
+                                                     /**** end custom styles ****/
                                              @page WordSection1
                                              {size:612.0pt 792.0pt;
                                               margin:70.85pt 70.85pt 2.0cm 70.85pt;
