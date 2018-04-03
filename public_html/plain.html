@@ -696,6 +696,29 @@ a:visited, span.MsoHyperlinkFollowed
 	mso-themecolor:followedhyperlink;
 	text-decoration:underline;
 	text-underline:single;}
+        *:hover, *:focus{
+            outline: none;
+        }
+        a:hover{cursor:pointer;}
+        a[x-apple-data-detectors=true] {
+            color: inherit !important;
+            text-decoration: inherit !important;
+        }
+        a:-webkit-any-link,
+        a[href]{
+            text-decoration: none !important;
+        }
+        /** Fix Google Styles **
+        .ii a[color:#fff !important;]
+        
+        u + #body a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }*/
 span.msotitle0
 	{mso-style-name:msotitle;
 	mso-style-unhide:no;
@@ -715,7 +738,13 @@ span.msofunction
 	text-transform:uppercase;}
         div.column{
             float:left;
+        }
+        div.column, td.column{
             width:250px;
+        }
+        td.location, td.contactData{
+            background-color: #00529e;
+            padding:5px;
         }
 p.addressrow-21, li.addressrow-21, div.addressrow-21
 	{mso-style-name:addressrow-21;
@@ -836,12 +865,14 @@ div.WordSection1
 
 <div class=WordSection1>
 <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span class="msotitle0"
-style='font-size:16.0pt'>Melanie Elsen <o:p></o:p></span></b></p>
-
-<p class=MsoNormal><span style='font-size:14.0pt' class="msofunction">C.C.O. - Geschäftsführendes
-Verwaltungsratsmitglied <o:p></o:p></span></p>
-    <div class=column>
-    <p class=MsoNormal><span style='font-family:"Arial",sans-serif'><!--[if gte vml 1]><v:shapetype
+style='font-size:16.0pt'>Melanie Elsen </span></b><br/>
+<span style='font-size:14.0pt' class="msofunction">C.C.O. - Geschäftsführendes
+Verwaltungsratsmitglied </span></p>
+    <table class="MsoNormalTable" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <!--<div class=column location>-->
+            <td class=column location>
+                    <p class=MsoNormal><span style='font-family:"Arial",sans-serif'><!--[if gte vml 1]><v:shapetype
  id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
  path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
  <v:stroke joinstyle="miter"/>
@@ -865,25 +896,27 @@ Verwaltungsratsmitglied <o:p></o:p></span></p>
  height:15pt'>
  <v:imagedata src="east-management-sig-Dateien/image001.png" o:title="Logo@3x"/>
 </v:shape><![endif]--><![if !vml]><img width=170 height=20
-src="east-management-sig-Dateien/image002.png" v:shapes="_x0000_i1026"><![endif]><o:p></o:p></span></p>
-    </div>
-<div class=column>
-<p class=MsoNormal>Malmedyer Str. 30 </p>
+src="east-management-sig-Dateien/image002.png" v:shapes="_x0000_i1026"><![endif]></span></p>
+            </td>
+            <!-- </div> -->
+            <!--<div class=column contactData>-->
+            <td class=column contactData>
+                <p class=MsoNormal addressrow-21>Malmedyer Str. 30 </p>
 
-<p class=MsoNormal>B - 4700 Eupen </p>
+<p class=MsoNormal addressrow-31>B - 4700 Eupen </p>
+            </td>
+            <!-- </div> -->
+            <!--<div class=column>-->
+            <td class=column>
+                <p class=MsoNormal contactrow-11><span style="text-transform:uppercase;color:#fff;">Tel.</span> <a style="font-weight: 600;" href="tel:+3287293752">+32 (0)87 29 37 52</a> </p>
 
-</div>
-<div class=column>
-<p class=MsoNormal>Tel. +32 (0)87 29 37 52 </p>
+                <p class=MsoNormal contactrow-21><span style="text-transform:uppercase;color:#fff;">Fax </span><a style="font-weight: 600;" href="tel:+ 3287632736">+ 32 (0)87 63 27 36</a></p>
 
-<p class=MsoNormal>Fax + 32 (0)87 63 27 36 </p>
-
-<p class=MsoNormal>Url www.eastmanagment.be<span style='font-family:"Arial",sans-serif'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
-</div>
-</div>
-
+                <p class=MsoNormal contactrow-31><span style="text-transform:uppercase;color:#fff;">Url </span><a style="text-transform:lowercase;font-weight: 600;" href="http://www.eastmanagement.be">www.eastmanagement.be</a></p>
+            </td>
+            <!-- </div> -->
+        </tr>
+    </table>
 </body>
 
 </html>
