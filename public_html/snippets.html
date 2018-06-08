@@ -9,8 +9,9 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <meta name=ProgId content=Word.Document>
 <meta name=Generator content="Microsoft Word 15">
 <meta name=Originator content="Microsoft Word 15">
-<link rel=File-List href="east-management-Dateien/filelist.xml">
-<link rel=Edit-Time-Data href="east-management-Dateien/editdata.mso">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400,500,600" rel="stylesheet">
+<link rel=File-List href="east-management-sig-Dateien/filelist.xml">
+<link rel=Edit-Time-Data href="east-management-sig-Dateien/editdata.mso">
 <!--[if !mso]>
 <style>
 v\:* {behavior:url(#default#VML);}
@@ -23,9 +24,9 @@ w\:* {behavior:url(#default#VML);}
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
 </xml><![endif]-->
-<link rel=themeData href="east-management-Dateien/themedata.thmx">
+<link rel=themeData href="east-management-sig-Dateien/themedata.thmx">
 <link rel=colorSchemeMapping
-href="east-management-Dateien/colorschememapping.xml">
+href="east-management-sig-Dateien/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
@@ -655,9 +656,9 @@ href="east-management-Dateien/colorschememapping.xml">
 	mso-font-charset:0;
 	mso-generic-font-family:roman;
 	mso-font-pitch:variable;
-	mso-font-signature:3 0 0 0 1 0;}
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
 @font-face
-	{font-family:Calibri;
+	{font-family:Arial;
 	panose-1:2 15 5 2 2 2 4 3 2 4;
 	mso-font-charset:0;
 	mso-generic-font-family:swiss;
@@ -672,19 +673,18 @@ href="east-management-Dateien/colorschememapping.xml">
 	margin-bottom:.0001pt;
 	mso-pagination:widow-orphan;
 	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
+	font-family:"Fira Condensed",Arial,Arial, sans-serif;
+	mso-ascii-font-family:Arial;
 	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-font-family:"Arial";
 	mso-fareast-theme-font:minor-fareast;
-	mso-hansi-font-family:Calibri;
+	mso-hansi-font-family:Arial;
 	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Arial";
 	mso-bidi-theme-font:minor-bidi;}
 a:link, span.MsoHyperlink
-	{mso-style-noshow:yes;
-	mso-style-priority:99;
-	color:#F5AF00;
+	{mso-style-priority:99;
+	color:#FBAC26;
 	mso-text-animation:none;
 	text-decoration:none;
 	text-underline:none;
@@ -693,40 +693,67 @@ a:link, span.MsoHyperlink
 a:visited, span.MsoHyperlinkFollowed
 	{mso-style-noshow:yes;
 	mso-style-priority:99;
-	color:#954F72;
+	color:#fff;
 	mso-themecolor:followedhyperlink;
-	text-decoration:underline;
-	text-underline:single;}
+	text-decoration:none;
+	text-underline:none;}
+        *:hover, *:focus{
+            outline: none;
+        }
+        a:-webkit-any-link,
+        a[href]
+        a:hover{cursor:pointer;}
+        a[x-apple-data-detectors=true] {
+            color: inherit !important;
+            text-decoration: none !important;
+        }
+        /** Fix Google Styles ***/
+        .ii a[href]{
+            color:#fff !important;
+        }
+        
+        u + #body a {
+            color: #fff !important;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
 span.msotitle0
 	{mso-style-name:msotitle;
 	mso-style-unhide:no;
-	mso-ansi-font-size:16.0pt;
-	mso-bidi-font-size:16.0pt;
-	color:#F5AF00;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	color:#FBAC26;
+	mso-hide:none;
 	text-transform:uppercase;
 	font-weight:bold;}
 span.msofunction
 	{mso-style-name:msofunction;
 	mso-style-unhide:no;
-	color:#203F94;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:11.0pt;
+	color:#00529E;
+	mso-hide:none;
 	text-transform:uppercase;}
-p.addressrow-11, li.addressrow-11, div.addressrow-11
-	{mso-style-name:addressrow-11;
-	mso-style-unhide:no;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:11.25pt;
-	margin-bottom:.0001pt;
-	mso-pagination:widow-orphan;
-	font-size:10.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	text-transform:uppercase;
-	font-weight:bold;}
+        div.column{
+            float:left;
+        }
+        div.column, td.column{
+            width:200px;
+        }
+       .location, .contactData{
+            background-color: #00529e;
+            padding:5px 10px;
+        }
+        div.location{
+            width:140px;
+        }
+        div.logo{padding-left:15px;}
 p.addressrow-21, li.addressrow-21, div.addressrow-21
 	{mso-style-name:addressrow-21;
+         color:#ffffff;
 	mso-style-unhide:no;
 	margin-top:0cm;
 	margin-right:0cm;
@@ -734,14 +761,13 @@ p.addressrow-21, li.addressrow-21, div.addressrow-21
 	margin-left:7.5pt;
 	margin-bottom:.0001pt;
 	mso-pagination:widow-orphan;
-	font-size:10.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	text-transform:uppercase;
-	font-weight:bold;}
+	font-size:8.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Arial";
+	mso-fareast-theme-font:minor-fareast;}
 p.addressrow-31, li.addressrow-31, div.addressrow-31
 	{mso-style-name:addressrow-31;
+         color:#ffffff;
 	mso-style-unhide:no;
 	margin-top:0cm;
 	margin-right:0cm;
@@ -749,12 +775,10 @@ p.addressrow-31, li.addressrow-31, div.addressrow-31
 	margin-left:3.75pt;
 	margin-bottom:.0001pt;
 	mso-pagination:widow-orphan;
-	font-size:10.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	text-transform:uppercase;
-	font-weight:bold;}
+	font-size:8.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Arial";
+	mso-fareast-theme-font:minor-fareast;}
 p.contactrow-11, li.contactrow-11, div.contactrow-11
 	{mso-style-name:contactrow-11;
 	mso-style-unhide:no;
@@ -764,12 +788,10 @@ p.contactrow-11, li.contactrow-11, div.contactrow-11
 	margin-left:11.25pt;
 	margin-bottom:.0001pt;
 	mso-pagination:widow-orphan;
-	font-size:10.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	text-transform:uppercase;
-	font-weight:bold;}
+	font-size:8.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Arial";
+	mso-fareast-theme-font:minor-fareast;}
 p.contactrow-21, li.contactrow-21, div.contactrow-21
 	{mso-style-name:contactrow-21;
 	mso-style-unhide:no;
@@ -779,12 +801,10 @@ p.contactrow-21, li.contactrow-21, div.contactrow-21
 	margin-left:7.5pt;
 	margin-bottom:.0001pt;
 	mso-pagination:widow-orphan;
-	font-size:10.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	text-transform:uppercase;
-	font-weight:bold;}
+	font-size:8.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Arial";
+	mso-fareast-theme-font:minor-fareast;}
 p.contactrow-31, li.contactrow-31, div.contactrow-31
 	{mso-style-name:contactrow-31;
 	mso-style-unhide:no;
@@ -794,28 +814,26 @@ p.contactrow-31, li.contactrow-31, div.contactrow-31
 	margin-left:3.75pt;
 	margin-bottom:.0001pt;
 	mso-pagination:widow-orphan;
-	font-size:10.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	text-transform:uppercase;
-	font-weight:bold;}
+	font-size:8.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Arial";
+	mso-fareast-theme-font:minor-fareast;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
 	font-size:11.0pt;
 	mso-ansi-font-size:11.0pt;
 	mso-bidi-font-size:11.0pt;
-	mso-ascii-font-family:Calibri;
+	mso-ascii-font-family:Arial;
 	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-font-family:"Arial";
 	mso-fareast-theme-font:minor-fareast;
-	mso-hansi-font-family:Calibri;
+	mso-hansi-font-family:Arial;
 	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Arial";
 	mso-bidi-theme-font:minor-bidi;}
 @page WordSection1
-	{size:612.0pt 792.0pt;
+	{size:750.0pt 792.0pt;
 	margin:70.85pt 70.85pt 2.0cm 70.85pt;
 	mso-header-margin:36.0pt;
 	mso-footer-margin:36.0pt;
@@ -839,22 +857,29 @@ div.WordSection1
 	mso-para-margin-bottom:.0001pt;
 	mso-pagination:widow-orphan;
 	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
+	font-family:"Arial",sans-serif;
+	mso-ascii-font-family:Arial;
 	mso-ascii-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
+	mso-hansi-font-family:Arial;
 	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Arial";
 	mso-bidi-theme-font:minor-bidi;}
 </style>
 <![endif]-->
 </head>
 
-<body lang=DE link="#F5AF00" vlink="#954F72" style='tab-interval:35.4pt'>
+<body lang=DE link="#FBAC26" vlink="#FBAC26" style='tab-interval:35.4pt;font-family:"Fira Condensed",Arial, sans-serif;'>
 
 <div class=WordSection1>
-
-<p class=MsoNormal><span class=msotitle0><span style='font-size:16.0pt'><!--[if gte vml 1]><v:shapetype
+<p class=MsoNormal style="margin-bottom:14pt;"><span class="msotitle0">Melanie Elsen </span><br/>
+<span class="msofunction">C.C.O. - Geschäftsführendes
+Verwaltungsratsmitglied </span></p>
+<!--[if gte mso 9]>
+    <table class="MsoNormalTable" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td class=column logo><![endif]-->
+                <div class=column logo>
+                    <p class=MsoNormal><span style='font-family:"Arial",sans-serif'><!--[if gte vml 1]><v:shapetype
  id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
  path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
  <v:stroke joinstyle="miter"/>
@@ -874,69 +899,34 @@ div.WordSection1
  </v:formulas>
  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
  <o:lock v:ext="edit" aspectratio="t"/>
-</v:shapetype><v:shape id="_x0000_i1026" type="#_x0000_t75" style='width:14pt;
- height:32.5pt'>
- <v:imagedata src="east-management-Dateien/image001.png" o:title="poly-before@2x"/>
-</v:shape><![endif]--><![if !vml]><img width=19 height=43
-src="east-management-Dateien/image002.png" v:shapes="_x0000_i1026"><![endif]><!--[if gte vml 1]><v:shape
- id="_x0000_i1027" type="#_x0000_t75" style='width:14pt;height:32.5pt'>
- <v:imagedata src="east-management-Dateien/image003.png" o:title="poly-after@2x"/>
-</v:shape><![endif]--><![if !vml]><img width=19 height=43
-src="east-management-Dateien/image004.png" v:shapes="_x0000_i1027"><![endif]><o:p></o:p></span></span></p>
-
-<p class=MsoNormal><span class=msotitle0><span style='font-size:16.0pt'>Melanie
-Elsen</span></span><br>
-<span class=msofunction>C.C.O. - Geschäftsführendes Verwaltungsratmitglied</span><o:p></o:p></p>
-
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
- style='mso-cellspacing:0cm;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
-  <td style='padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
-   style='width:127.5pt;height:15pt'>
-   <v:imagedata src="east-management-Dateien/image005.png" o:title="Logo@2x"/>
-  </v:shape><![endif]--><![if !vml]><img width=170 height=20
-  src="east-management-Dateien/image006.png" v:shapes="_x0000_i1025"><![endif]><o:p></o:p></p>
-  </td>
-  <td width=0 style='width:.3pt;padding:0cm 5.4pt 0cm 5.4pt'></td>
-  <td style='background:#203F94;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=addressrow-11><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
-  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
-  mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
-  color:white'>East Management A.G<o:p></o:p></span></p>
-  <p class=addressrow-21><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
-  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
-  mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
-  color:white'>Malmedyer Str. 30<o:p></o:p></span></p>
-  <p class=addressrow-31><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
-  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
-  mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
-  color:white'>B - 4700 Eupen<o:p></o:p></span></p>
-  </td>
-  <td style='background:#203F94;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=contactrow-11><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
-  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
-  mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
-  color:white'>Tel. <a href="tel:+3287293752">+32 (0)87 29 37 52</a><o:p></o:p></span></p>
-  <p class=contactrow-21><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
-  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
-  mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
-  color:white'>Fax <a href="tel:+%203287632736">+ 32 (0)87 63 27 36</a><o:p></o:p></span></p>
-  <p class=contactrow-31><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:
-  minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
-  mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
-  color:white'>Mail <a href="mailto:melanie.elsen@eastmanagment.be">melanie.elsen@eastmanagment.be</a><o:p></o:p></span></p>
-  </td>
-  <td width=0 style='width:.3pt;padding:0cm 5.4pt 0cm 5.4pt'></td>
- </tr>
-</table>
-
-<p class=MsoNormal>Besuchen Sie unsere Webseite <a href="www.eastmanagement.be">www.eastmanagement.be</a></p>
-
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
+</v:shapetype><v:shape id="_x0000_i1026" type="#_x0000_t75" style='width:191.25pt;
+ height:22.5pt'>
+ <v:imagedata src="east-management-sig-Dateien/image001.png" o:title="East Management A.G"/>
+</v:shape><![endif]--><![if !vml]><img width=170 height=20
+src="east-management-sig-Dateien/image002.png" v:shapes="_x0000_i1026"><![endif]></span></p>
 </div>
+           <!--[if gte mso 9]> </td>
+            <td class=column location style="background-color:#00529e;padding:5px 0 5px 10px;width:140px;"><![endif]-->
+                <div class=column location">
+                    <p class=addressrow-21><span style="text-transform:uppercase;color:#fff;">Malmedyer Str. 30 </span></p>
 
+                    <p class=addressrow-31><span style="text-transform:uppercase;color:#fff;">B - 4700 Eupen</span> </p>
+                </div>
+           <!--[if gte mso 9]>
+            </td>
+            <td class=column contactData style="background-color:#00529e;padding:5px 10px 5px 0;width:170px;"><![endif]-->
+           <div class=column contactData>
+                <p class=contactrow-11><span style="margin-left:11.25pt;text-transform:uppercase;color:#fff;">Tel.</span> <a style="font-weight: 600;" href="tel:+3287293752">+32 (0)87 29 37 52</a> </p>
+
+                <p class=contactrow-21><span style="margin-left:7.5pt;text-transform:uppercase;color:#fff;">Fax </span><a style="font-weight: 600;" href="tel:+ 3287632736">+ 32 (0)87 63 27 36</a></p>
+
+                <p class=contactrow-31><span style="margin-left:3.75pt;text-transform:uppercase;color:#fff;">Url </span><a style="text-transform:lowercase;font-weight: 600;" href="http://www.eastmanagement.be">www.eastmanagement.be</a></p>
+           </div>
+           <!--[if gte mso 9]> 
+            </td>
+        </tr>
+    </table>
+           <![endif]-->
 </body>
 
 </html>
